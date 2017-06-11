@@ -5,14 +5,16 @@ torch.nn.init.calculate_gain(nonlinearity,param=None)
 ```
 
 对于给定的非线性函数，返回推荐的增益值。这些值如下所示：
-| nonlinearity | gain                             |
-| ------------ | -------------------------------- |
-| linear       | $1$                              |
-| conv{1,2,3}d | $1$                              |
-| sigmoid      | $1$                              |
-| tanh         | $5/3$                            |
-| relu         | $\sqrt{2}$                       |
-| leaky_relu   | $\sqrt{2/(1+negative\_slope^2)}$ |
+
+
+| nonlinearity | gain                          |
+| ------------ | ----------------------------- |
+| linear       | 1                             |
+| conv{1,2,3}d | 1                             |
+| sigmoid      | 1                             |
+| tanh         | 5/3                           |
+| relu         | sqrt(2)                       |
+| leaky_relu   | sqrt(2/(1+negative_slope^2))  |
 
 **参数：**
 
@@ -48,7 +50,7 @@ torch.nn.init.uniform(tensor, a=0, b=1)
 torch.nn.init.normal(tensor, mean=0, std=1)
 ```
 
-从给定均值和标准差的正态分布$N(mean, std)$中生成值，填充输入的张量或变量
+从给定均值和标准差的正态分布N(mean, std)中生成值，填充输入的张量或变量
 
 **参数：**
 
@@ -119,7 +121,7 @@ torch.nn.init.dirac(tensor)
 torch.nn.init.xavier_uniform(tensor, gain=1)
 ```
 
-根据Glorot, X.和Bengio, Y.在“Understanding the difficulty of training deep feedforward neural networks”中描述的方法，用一个均匀分布生成值，填充输入的张量或变量。结果张量中的值采样自$U(-a, a)$，其中$a= gain \times \sqrt{2/(fan\_in + fan\_out)}\times \sqrt{3}$.该方法也被称为Glorot initialisation
+根据Glorot, X.和Bengio, Y.在“Understanding the difficulty of training deep feedforward neural networks”中描述的方法，用一个均匀分布生成值，填充输入的张量或变量。结果张量中的值采样自U(-a, a)，其中a= gain * sqrt( 2/(fan_in + fan_out))* sqrt(3). 该方法也被称为Glorot initialisation
 
 **参数：**
 
@@ -137,7 +139,7 @@ torch.nn.init.xavier_uniform(tensor, gain=1)
 torch.nn.init.xavier_normal(tensor, gain=1)
 ```
 
-根据Glorot, X.和Bengio, Y. 于2010年在“Understanding the difficulty of training deep feedforward neural networks”中描述的方法，用一个正态分布生成值，填充输入的张量或变量。结果张量中的值采样自均值为0，标准差为$gain\times \sqrt{2/(fan\_in + fan\_out)}$的正态分布。也被称为Glorot initialisation.
+根据Glorot, X.和Bengio, Y. 于2010年在“Understanding the difficulty of training deep feedforward neural networks”中描述的方法，用一个正态分布生成值，填充输入的张量或变量。结果张量中的值采样自均值为0，标准差为gain * sqrt(2/(fan_in + fan_out))的正态分布。也被称为Glorot initialisation.
 
 **参数：**
 
@@ -155,7 +157,7 @@ torch.nn.init.xavier_normal(tensor, gain=1)
 torch.nn.init.kaiming_uniform(tensor, a=0, mode='fan_in')
 ```
 
-根据He, K等人于2015年在“Delving deep into rectifiers: Surpassing human-level performance on ImageNet classification”中描述的方法，用一个均匀分布生成值，填充输入的张量或变量。结果张量中的值采样自$U(-bound, bound)$，其中$bound = \sqrt{2/((1 + a^2) \times fan\_in)} \times \sqrt{3}$。也被称为He initialisation.
+根据He, K等人于2015年在“Delving deep into rectifiers: Surpassing human-level performance on ImageNet classification”中描述的方法，用一个均匀分布生成值，填充输入的张量或变量。结果张量中的值采样自U(-bound, bound)，其中bound = sqrt(2/((1 + a^2) * fan_in)) * sqrt(3)。也被称为He initialisation.
 
 **参数：**
 
@@ -174,7 +176,7 @@ torch.nn.init.kaiming_uniform(tensor, a=0, mode='fan_in')
 torch.nn.init.kaiming_normal(tensor, a=0, mode='fan_in')
 ```
 
-根据He, K等人在“Delving deep into rectifiers: Surpassing human-level performance on ImageNet classification”中描述的方法，用一个正态分布生成值，填充输入的张量或变量。结果张量中的值采样自均值为0，标准差为$\sqrt{2/((1 + a^2) \times fan\_in)}$的正态分布。
+根据He, K等人在“Delving deep into rectifiers: Surpassing human-level performance on ImageNet classification”中描述的方法，用一个正态分布生成值，填充输入的张量或变量。结果张量中的值采样自均值为0，标准差为sqrt(2/((1 + a^2) * fan_in))的正态分布。
 
 **参数：**
 
