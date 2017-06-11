@@ -22,32 +22,32 @@
 - [x] torch.Tensor(*weigp*)
 - [x] torch.Storage(*kophy*)
 - [ ] **torch.nn**
-  - [x] Parameters(*KeithYin*)
-  - [x] Containers(*KeithYin*)
-  - [x] Convolution Layers(*yichuan9527*)
-  - [x] Pooling Layers(*yichuan9527*)
-  - [x] Non-linear Activations(*swordspoet*)
-  - [x] Normalization layers(*XavierLin*)
-  - [x] Recurrent layers(*KeithYin*)
-  - [x] Linear layers
-  - [x] Dropout layers
-  - [x] Sparse layers
-  - [x] Distance functions
-  - [x] Loss functions(*KeithYin*)
-  - [x] Vision layers(*KeithYin*)
-  - [x] Multi-GPU layers(*KeithYin*)
-  - [x] Utilities(*KeithYin*)
+- [x] Parameters(*KeithYin*)
+- [x] Containers(*KeithYin*)
+- [x] Convolution Layers(*yichuan9527*)
+- [x] Pooling Layers(*yichuan9527*)
+- [x] Non-linear Activations(*swordspoet*)
+- [x] Normalization layers(*XavierLin*)
+- [x] Recurrent layers(*KeithYin*)
+- [x] Linear layers
+- [x] Dropout layers
+- [x] Sparse layers
+- [x] Distance functions
+- [x] Loss functions(*KeithYin*)
+- [x] Vision layers(*KeithYin*)
+- [x] Multi-GPU layers(*KeithYin*)
+- [x] Utilities(*KeithYin*)
 - [x] torch.nn.functional
-  - [x] Convolution functions(*ycszen*)
-  - [x] Pooling functions(*ycszen*)
-  - [x] Non-linear activations functions(*ycszen*)
-  - [x] Normalization functions(*ycszen*)
-  - [x] Linear functions(*dyl745001196*)
-  - [x] Dropout functions(*dyl745001196*)
-  - [x] Distance functions(*dyl745001196*)
-  - [x] Loss functions(*tfygg*)
-  - [x] Vision functions(*KeithYin*)
-- [x] torch.nn.init(*kophy*)
+- [x] Convolution functions(*ycszen*)
+- [x] Pooling functions(*ycszen*)
+- [x] Non-linear activations functions(*ycszen*)
+- [x] Normalization functions(*ycszen*)
+- [x] Linear functions(*dyl745001196*)
+- [x] Dropout functions(*dyl745001196*)
+- [x] Distance functions(*dyl745001196*)
+- [x] Loss functions(*tfygg*)
+- [x] Vision functions(*KeithYin*)
+- [x] torch.nn.init(*kophy*, *Mayouji*)
 - [x] torch.optim(*ZijunDeng*)
 - [x] torch.autograd(*KeithYin*)
 - [x] torch.multiprocessing(*songbo.han*)
