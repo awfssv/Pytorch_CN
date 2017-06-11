@@ -7,14 +7,14 @@ torch.nn.init.calculate_gain(nonlinearity,param=None)
 对于给定的非线性函数，返回推荐的增益值。这些值如下所示：
 
 
-| nonlinearity | gain                          |
-| ------------ | ----------------------------- |
-| linear       | 1                             |
-| conv{1,2,3}d | 1                             |
-| sigmoid      | 1                             |
-| tanh         | 5/3                           |
-| relu         | sqrt(2)                       |
-| leaky_relu   | sqrt(2/(1+negative_slope^2))  |
+| nonlinearity | gain                         |
+| ------------ | ---------------------------- |
+| linear       | 1                            |
+| conv{1,2,3}d | 1                            |
+| sigmoid      | 1                            |
+| tanh         | 5/3                          |
+| relu         | sqrt(2)                      |
+| leaky_relu   | sqrt(2/(1+negative_slope^2)) |
 
 **参数：**
 
@@ -31,7 +31,7 @@ torch.nn.init.calculate_gain(nonlinearity,param=None)
 torch.nn.init.uniform(tensor, a=0, b=1)
 ```
 
-从均匀分布$U(a, b)$中生成值，填充输入的张量或变量
+从均匀分布U(a, b)中生成值，填充输入的张量或变量
 
 **参数：**
 
@@ -217,6 +217,7 @@ torch.nn.init.sparse(tensor, sparsity, std=0.01)
 
 将2维的输入张量或变量当做稀疏矩阵填充，其中非零元素根据一个均值为0，标准差为std的正态分布生成。
 参考Martens, J.(2010)的 “Deep learning via Hessian-free optimization”. 
+
 **参数：**
 
 - **tensor** – n维的torch.Tensor或autograd.Variable
